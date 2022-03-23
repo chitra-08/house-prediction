@@ -1,5 +1,5 @@
 # house-prediction
-House Prediction model
+House Price Prediction model
 1. Worked on the dataset of bangalore house data.
 2. Data cleansing done by removing the null values or imputing, transformation and data partioning.
 3. Did the feature engineering to derive the meaningful columns and remove the unwanted ones. 
