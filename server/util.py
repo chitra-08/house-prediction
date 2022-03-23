@@ -40,13 +40,4 @@ def load_artifacts():
     model = pickle.load(fp1)
     fp1.close()
 
-
-#if __name__ == "__main__":
 load_artifacts()
-#print(get_loc_names())
-    #location, bhk, sqft, bath, balcony
-#print(get_estimated_price('1st Phase JP Nagar', 3, 1000, 3, 1))
-#print(get_estimated_price('1st Phase JP Nagar', 2, 1000, 1, 1))
-#print(get_estimated_price('SNN', 2, 1000, 1, 1))
-#print(get_estimated_price('Brigade', 2, 1000, 1, 1))
-#print(get_estimated_price('Hiranandani', 3, 1800, 3, 2))
