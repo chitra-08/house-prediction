@@ -3,10 +3,6 @@ import util
 
 app = Flask(__name__)
 
-@app.route("/hello")
-def hello():
-    return 'HI'
-
 @app.route('/get_loc_names')
 def get_loc_names():
     response = jsonify({
@@ -32,4 +28,4 @@ def predict_home_price():
 
 if __name__ == "__main__":
     print("Start predicting the house price")
-    app.run(debug=True)
+    app.run()
