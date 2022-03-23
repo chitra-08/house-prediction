@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, jsonify
 import util
 
 app = Flask(__name__)
 
-@app.route("/hello")
-def hello():
-    return 'HI'
+@app.route('/')
+def home():
+    return render_template('app.html')
 
 @app.route('/get_loc_names')
 def get_loc_names():
