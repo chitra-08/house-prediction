@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Prediction</title>
+  <link href="main.css" rel="stylesheet" />
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+<div class="top">
+  <p></p>
+</div>
+<div class="centered">
+  <h1 style="font-family: fantasy;color:#404040; letter-spacing: 2px;">House Pricing Prediction</h1>
+  <br/>
+  <form method="post">
+    <div>
+      Area: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="total_sqft" name="total_sqft" placeholder="Area (Square Feet)" type="text" size="30" maxlength="10" required="required">
+    </div>
+    <hr class = "rounded"/>
+    <div>
+      Location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="location" name="location">
+      </select>
+    </div>
+    <hr class = "rounded"/>
+     <div>
+       BHK:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="bhk" name="bhk" >
+        <option value="1">1 BHK/RK</option>
+        <option value="2">2 BHK</option>
+        <option value="3">3 BHK</option>
+        <option value="4">4 BHK</option>
+        <option value="5">5 BHK</option>
+      </select>
+    </div>
+    <hr class = "rounded"/>
+     <div>
+       Bathrooms:&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="bath" name="bath">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <hr class = "rounded"/>
+     <div>
+       Balconies:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="balcony" name="balcony">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <hr class = "rounded"/>
+    <br/>
+    <div class="reg">
+      <button type="button" onclick="onClickPrice()">Check Estimated Price</button>
+    </div>
+    <br/><br/>
+    <div class="res" id="est_price" name="est_price">
+    </div>
+  </form>
+  <br/><br/><br/>
+</div>
+<br/>
+<div class="footer">
+  <p>&copy; All rights reserved 2022</p>
+</div>
+
+</body>
+</html>
