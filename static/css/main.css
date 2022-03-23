@@ -72,7 +72,7 @@ hr.rounded {
 }
 
 body {
- background-image: url("bg1.jpg");
+ background-image: url("/static/images/bg1.jpg");
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: 100% 100%;
