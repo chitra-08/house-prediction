@@ -31,5 +31,4 @@ def predict_home_price():
     return response
 
 if __name__ == "__main__":
-    print("Start predicting the house price")
     app.run(debug=True)
