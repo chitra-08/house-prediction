@@ -27,6 +27,7 @@ function onClickPrice(){
 
 function onPageLoad(){
     console.log("document loaded")
+    console.log(${window.location.hostname})
     var url = "${window.location.hostname}/get_loc_names";
     console.log(url);
     $.get(url,function(data,status){
