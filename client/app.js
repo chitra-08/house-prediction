@@ -6,7 +6,8 @@ function onClickPrice(){
     var estPrice = document.getElementById("est_price");
     var area = document.getElementById("total_sqft");
 
-    var predict_url = "/predict-price";
+    var predict_url = "${window.location.hostname}/predict-price";
+    console.log(predict_url);
 
     $.post(predict_url,{
         total_sqft: parseFloat(area.value),
@@ -26,7 +27,8 @@ function onClickPrice(){
 
 function onPageLoad(){
     console.log("document loaded")
-    var url = "/get_loc_names";
+    var url = "${window.location.hostname}/get_loc_names";
+    console.log(url);
     $.get(url,function(data,status){
         console.log("Got location from method")
         if(data){
