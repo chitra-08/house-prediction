@@ -6,7 +6,7 @@ function onClickPrice(){
     var estPrice = document.getElementById("est_price");
     var area = document.getElementById("total_sqft");
 
-    var predict_url = "http://127.0.0.1:5000/predict-price";
+    var predict_url = "https://ml-home-price-predict.herokuapp.com/predict-price";
 
     $.post(predict_url,{
         total_sqft: parseFloat(area.value),
@@ -26,7 +26,7 @@ function onClickPrice(){
 
 function onPageLoad(){
     console.log("document loaded")
-    var url = "http://127.0.0.1:5000/get_loc_names";
+    var url = "https://ml-home-price-predict.herokuapp.com/predict-price/get_loc_names";
     $.get(url,function(data,status){
         console.log("Got location from method")
         if(data){
